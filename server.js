@@ -6,7 +6,7 @@ const cors = require('cors');
 const runner = require('./test-runner');
 
 const bodyParser = require('body-parser');
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
